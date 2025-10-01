@@ -23,11 +23,13 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           light: "hsl(var(--primary-light))",
+          dark: "hsl(var(--primary-dark))",
         },
         secure: {
           DEFAULT: "hsl(var(--secure))",
           foreground: "hsl(var(--secure-foreground))",
           light: "hsl(var(--secure-light))",
+          glow: "hsl(var(--secure-glow))",
         },
         warning: {
           DEFAULT: "hsl(var(--warning))",
@@ -64,10 +66,23 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-secure': 'var(--gradient-secure)',
+        'gradient-warning': 'var(--gradient-warning)',
+        'gradient-risk': 'var(--gradient-risk)',
+      },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
         'md': 'var(--shadow-md)',
         'lg': 'var(--shadow-lg)',
+        'glow': 'var(--shadow-glow)',
+        'glow-secure': 'var(--shadow-glow-secure)',
+        'glow-warning': 'var(--shadow-glow-warning)',
+        'glow-risk': 'var(--shadow-glow-risk)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
       borderRadius: {
         lg: "var(--radius)",
